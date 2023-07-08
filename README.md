@@ -1,6 +1,9 @@
 # goFTP
 `goFTP` is a web-based application written in Go that serves as a file listing and download tool for remote FTP servers. It enables the listing of files and folders, direct download of files, as well as the ability to remotely download files from one FTP server to another. This tool is designed to be easy to set up and use, and it can be used as a one-time script or run as a background service.
 
+## Screenshot
+![Screenshot 2023-07-08 at 5.39.39 PM.png](Screenshot 2023-07-08 at 5.39.39 PM.png)
+
 ## Features
 - List files and folders in a remote FTP server.
 - Download files directly from the FTP server.
