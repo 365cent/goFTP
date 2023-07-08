@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>{{.Title}}</header>
+    <main>
+        <form action="/remote-download" method="post">
+            <label for="sourceURL">Source URL:</label>
+            <input type="text" id="sourceURL" name="sourceURL">
+            <input type="submit" value="Download">
+        </form>
+        <ul>
+            {{range .Files}}
+                <li><a href="download?file={{.}}">{{.}}</a></li>
+            {{end}}
+        </ul>
+    </main>
+    <footer>
+        &copy; Liberty Network
+    </footer>
+</body>
+</html>
